@@ -1,0 +1,23 @@
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000091;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+.preloader .loader {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;    /* To center the loader */
+    top: 50%;
+    transform: translate(-50%, -50%);  /* To fine-tune centering */
+}
+
+.preloader .loader img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,39 @@
+.navbar {
+    transition: background 0.5s, box-shadow 0.5s;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 101; /* Increased z-index to keep it above the slider */
+    background: transparent;
+    background-color: #6C5B7B;
+    font-weight: bold
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    font-weight: 600; /* Making the brand bolder */
+}
+
+
+.navbar .nav-item {
+    padding: 10px 20px;
+}
+
+.navbar .nav-link {
+    font-size: 18px; /* Reducing the size for better spacing */
+    margin-left: 10px;
+    font-weight: 400; /* Regular weight for navigation links */
+}
+
+.fa-bars {
+    color: #C06C84; 
+    font-size: 28px; /* Reducing the size slightly for aesthetics */
+}
+
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff; 
+}
+

@@ -1,0 +1,84 @@
+/* Landing Page */
+.landing-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;  /* Set to relative so the child can be absolutely positioned in relation to this */
+    
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;  /* Position the top edge of the content in the center */
+    left: 50%; /* Position the left edge of the content in the center */
+    transform: translate(-50%, -50%); /* Pull back by half its own height and width to truly center */
+    text-align: center;
+    color: white;
+    
+}
+
+.slide-content h1 {
+    font-weight: bold; /* Making the quotes bold */
+    font-size: 2.5em;
+    color: #fff; /* Assuming white text will look good on purple background */
+    
+}
+
+
+
+/* Navbar Styles */
+body > nav.navbar {
+    background: transparent;
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+body:not(.at-top) > nav.navbar {
+    background: white;
+    position: relative;
+}
+
+/* Assuming .at-top is added to body when it's scrolled to the top. */
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 101;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* Add some padding around the icon */
+}
+
+.slick-prev i, .slick-next i {
+    color: white;
+    font-size: 20px; /* Adjust size as necessary */
+}
+
+.slick-prev {
+    left: 10px; /* Distance from the left edge */
+}
+
+.slick-next {
+    right: 10px; /* Distance from the right edge */
+}
+
+/* Reset button styles (optional) */
+.slick-prev:focus, .slick-next:focus {
+    outline: none;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker on hover */
+}
+
