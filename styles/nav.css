@@ -6,8 +6,8 @@
     width: 100%;
     z-index: 101; /* Increased z-index to keep it above the slider */
     background: transparent;
-    background-color: #6C5B7B;
-    font-weight: bold
+    font-weight: bold;
+    position: absolute;
 }
 
 .navbar .navbar-brand {
@@ -27,7 +27,7 @@
 }
 
 .fa-bars {
-    color: #C06C84; 
+    color: white; 
     font-size: 28px; /* Reducing the size slightly for aesthetics */
 }
 

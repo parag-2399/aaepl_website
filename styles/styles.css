@@ -2,5 +2,54 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-color: #f6f6f6;
+}
+
+
+
+/* Add shadow to cards */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;  /* Smooth transitions for transform and box-shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Make the card use flexbox */
+    flex-direction: column; /* Stack the children (img and card-body) vertically */
+}
+
+
+.card-img-top {
+    height: 240px;  /* Fixed height for the image */
+    object-fit: cover;  /* Ensure the image covers the area without distorting the aspect ratio */
+    width: 100%;  /* Ensure the image spans the full width of its parent */
+    margin-bottom: 10px;  /* Little space below the image */
+}
+.card-body {
+    flex-grow: 1;  /* Allow the card-body to take up the remaining space after the image */
+    display: flex;  /* Make card-body also use flexbox */
+    flex-direction: column;  /* Stack its children vertically */
+    justify-content: space-between;  /* Distribute the space between its children */
+    padding-top: 5px;  /* Reduce top padding inside card body for lesser space */
+    padding-bottom: 10px;  /* Adjust the bottom padding as per your needs */
+}
+.card:hover {
+    transform: scale(1.05);  /* Enlarges the card to 105% of its original size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-text {
+    margin: 0;  /* Remove any default margins to ensure consistent alignment */
+}
+
+.card-title {
+    margin-bottom: 10px;  /* Consistent margin after the title */
+}
+
+
+
+
+.text-black {
+    color: black;
+}
+
+.heading-color{
+    color:#433a8b;
 }
