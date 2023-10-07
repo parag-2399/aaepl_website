@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/landing.css">
     <link rel="stylesheet" href="styles/preloader.css">
     <link rel="stylesheet" href="libraries/slick/slick.css">
+    <link rel="stylesheet" href="libraries/animate/animate.css">
 </head>
 
 <body>
@@ -73,18 +74,28 @@
     <!-- LANDING PAGE START -->
 <div class="landing-page">
     
-    <div  class="slide" style="background-image: url('https://images.pexels.com/photos/1983046/pexels-photo-1983046.jpeg?cs=srgb&dl=pexels-alex-andrews-1983046.jpg&fm=jpg');">
-        
-        <div class="slide-content">
-            <h1>The most memorable events aren’t planned, they just happen</h1>
+    <div class="slide">
+        <div class="slide__img" >
+          <img src="http://alexandrebuffet.fr/codepen/images/full/nature_01.jpg"/>
         </div>
-    </div>
-    <div class="slide" style="background-image: url('https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?cs=srgb&dl=pexels-wendy-wei-1190297.jpg&fm=jpg');">
-        <div class="slide-content">
-            <h1>Every event is the beginning of a chain of events</h1>
-            
+        <div class="slide__content">
+          <div class="slide__content--headings">
+             <h2 class="animate__animated animate__bounce animate__delay-2s">Slide me to the moon</h2>
+             <p  data-delay-in="0.3">With awesome animations</p>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="slide">
+        <div class="slide__img">
+          <img src="http://alexandrebuffet.fr/codepen/images/full/nature_02.jpg"/>
+        </div>
+        <div class="slide__content">
+          <div class="slide__content--headings">
+             <h2 >Slide me to the moon</h2>
+             <p  data-delay-in="0.2">With awesome animations</p>
+          </div>
+        </div>
+      </div>
 </div>
 <!-- LANDING PAGE END -->
 <!-- Custom Arrows for Slick Slider -->
@@ -112,6 +123,8 @@
 <script src="libraries/slick/slick.js"></script>
 <script src="js/landing.js"></script>
 <script src="js/preloader.js"></script>
-<script src="js/scripts.js"></script>cr
+<script src="js/scripts.js"></script>
+<script src="libraries/wow/wow.js"></script>
+<script src="libraries/wow/wow.min.js"></script>
 
 </html>

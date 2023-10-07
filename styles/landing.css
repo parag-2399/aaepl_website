@@ -1,51 +1,33 @@
-/* Landing Page */
-.landing-page {
+.landing-page{
+    overflow:hidden ;
+}
+
+.slide__img {
+    position: relative;
+    height: 100vh; /* This will make it take the full height of the viewport */
+    width: 100%;   /* This will make it take the full width */
+    overflow: hidden; /* To make sure the image doesn't overflow */
+}
+
+.slide__img img {
+    object-fit: cover; /* This will make sure the image covers the full area of its container */
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .slide {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;  /* Set to relative so the child can be absolutely positioned in relation to this */
-    
-}
-
-.slide-content {
-    position: absolute;
-    top: 50%;  /* Position the top edge of the content in the center */
-    left: 50%; /* Position the left edge of the content in the center */
-    transform: translate(-50%, -50%); /* Pull back by half its own height and width to truly center */
-    text-align: center;
-    color: white;
-    
-}
-
-.slide-content h1 {
-    font-weight: bold; /* Making the quotes bold */
-    font-size: 2.5em;
-    color: #fff; /* Assuming white text will look good on purple background */
-    
-}
-
-
-
-/* Navbar Styles */
-body > nav.navbar {
-    background: transparent;
-    box-shadow: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-body:not(.at-top) > nav.navbar {
-    background: white;
     position: relative;
 }
+
+.slide__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* This will center the content */
+    z-index: 2; /* To make sure it stays on top of the image */
+    color: white;
+}
+
 
 /* Assuming .at-top is added to body when it's scrolled to the top. */
 
@@ -54,7 +36,7 @@ body:not(.at-top) > nav.navbar {
     top: 50%;
     transform: translateY(-50%);
     z-index: 101;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    
     border: none;
     cursor: pointer;
     padding: 10px; /* Add some padding around the icon */
