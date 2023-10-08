@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@1,900&family=Poppins:wght@300&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     /* overflow: hidden; */
-    background-color: #f6f6f6;
+    background-color: #fff;
+    font-family: "Poppins" sans-serif;
 }
 
 
@@ -276,4 +279,21 @@ body {
     .gallery__overlay {
         font-size: 1rem;
     }
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
+
+.services-offered h2{
+    
+        font-weight: bold; /* This makes the text bold */
+        font-size: 3.5rem; /* This would be equivalent to 24px if the root font size is 16px */
+        color: #8685EF;
 }

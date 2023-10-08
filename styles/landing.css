@@ -17,14 +17,14 @@
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-top: 25px;
-	font-family: merienda;
+	font-family: Roboto;
 }
 .carousel-caption p {
 	width: 60%;
 	margin: auto;
 	font-size: 18px;
 	line-height: 1.9;
-	font-family: poppins;
+	
 }
 .carousel-caption a {
 	text-transform: uppercase;
@@ -108,3 +108,5 @@
         height: 100%;
     }
 }
+
+
