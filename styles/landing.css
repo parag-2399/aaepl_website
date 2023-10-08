@@ -1,40 +1,45 @@
+/* Base styles */
 .carousel-item {
-	height: 100vh;
-	min-height: 300px;
+    height: 100vh;
+    min-height: 300px;
 }
 
 .carousel-item img {
     object-fit: cover;
     align-items: center;
     position: relative;
+    width: 100%; /* ensure the image stretches to fill container */
+    height: 100%; /* ensure the image stretches to fill container */
 }
 
 .carousel-caption {
-	bottom: 220px;
-}
-.carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
-	font-family: Roboto;
-}
-.carousel-caption p {
-	width: 60%;
-	margin: auto;
-	font-size: 18px;
-	line-height: 1.9;
-	
-}
-.carousel-caption a {
-	text-transform: uppercase;
-	background: #262626;
-	padding: 10px 30px;
-	display: inline-block;
-	color: #fff;
-	margin-top: 15px;
+    bottom: 220px;
+    z-index: 2; /* To ensure the caption is above the overlay */
 }
 
+.carousel-caption h5 {
+    font-size: 2.5rem; /* equivalent of 40px for 16px root font-size */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 1.125rem; /* relative unit */
+    line-height: 1.9;
+}
+
+.carousel-caption a {
+    text-transform: uppercase;
+    background: #262626;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+}
 
 .carousel-item::before {
     content: "";
@@ -44,69 +49,25 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* This is black with 50% opacity. You can adjust the 0.5 value to make it lighter or darker */
-    z-index: 1; /* Ensure it's below the carousel caption text but above the image */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-@keyframes slideFromLeft {
-    0% {
-        transform: translateX(-120%);
-        opacity: 0;
+/* Media query adjustments */
+@media (max-width: 992px) {
+    .carousel-caption h5 {
+        font-size: 2rem; /* Slightly reduce font-size */
     }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideFromRight {
-    0% {
-        transform: translateX(120%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
+    .carousel-caption p {
+        font-size: 1rem; /* Slightly reduce font-size */
     }
 }
 
-@keyframes growVerticalLine {
-    0% {
-        height: 0;
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.75rem; /* Further reduce font-size for smaller screens */
     }
-    100% {
-        height: 100%;
-    }
-}
-@keyframes slideToLeft {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-120%);
-        opacity: 1;
+    .carousel-caption p {
+        font-size: 0.875rem; /* Further reduce font-size */
     }
 }
-
-@keyframes slideToRight {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(120%);
-        opacity: 1;
-    }
-}
-
-@keyframes growVerticalLine {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 100%;
-    }
-}
-
-

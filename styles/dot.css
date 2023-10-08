@@ -1,0 +1,15 @@
+.dots-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin:2rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #8685EF; /* Color of the dot */
+    border-radius: 50%;      /* Makes it circular */
+    margin: 0 5px;           /* Spacing between dots */
+  
+}
