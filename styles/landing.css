@@ -18,16 +18,18 @@
 }
 
 .carousel-caption h5 {
-    font-size: 2.8rem; /* Made the font a bit larger */
-    font-weight: 600;  /* Made the font slightly bolder */
+    font-size: 3.8rem; /* Made the font a bit larger */
+    font-weight: 900;  /* Made the font slightly bolder */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Added a shadow for better readability against bright backgrounds */
 }
 
 .carousel-caption p {
-    width: 60%;
+    
     margin: auto;
-    font-size: 1.125rem; /* relative unit */
+    font-size: 1.225rem; /* relative unit */
     line-height: 1.9;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .carousel-caption a {
@@ -69,3 +71,8 @@
         font-size: 0.875rem; /* Further reduce font-size */
     }
 }
+
+#carouselExampleIndicators .carousel-indicators li.active {
+    background-color: #fb0060;
+}
+

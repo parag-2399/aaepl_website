@@ -2,13 +2,9 @@
 
 
 
-.about_us {
-    font-family: "Poppins", sans-serif;
-    color: #433a8b; /* Main color scheme */
-}
 
 .section-title h2 {
-    font-weight: bold;
+    font-weight: 900;
     color: #8685EF; /* Accent color for highlight */
     font-size: 2.2rem;
     margin-bottom: 10px;

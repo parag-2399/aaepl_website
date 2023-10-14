@@ -1,0 +1,63 @@
+
+
+/* Updated colors, sizes, and weights */
+.heading-color {
+    color: black;
+    font-size: 2.5rem; 
+    font-weight: 900; 
+    line-height: 90px;
+}
+/* .services-offered-heading p{
+    color: #fb0060;
+} */
+
+.text-center.heading-color.mb-5 {
+    font-size: 1.4rem;
+    font-weight: 500; 
+    margin-top: 20px; 
+}
+
+.card-body {
+    padding: 15px; /* Padding for better spacing */
+    text-align: left; /* Center the text */
+}
+/* Adjusted card title and text for better readability and consistency */
+.card-title {
+    font-size: 1.6rem; /* Adjusted font size */
+    font-weight: 600;
+    margin-bottom: 15px; 
+    color: #433a8b;
+}
+
+.card-text {
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: 400; 
+    margin-bottom: 20px; 
+    line-height: 30px;
+    text-align: left;
+    color: #999999;
+}
+
+/* Improved card layout with shadow and transformation */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    overflow: hidden; 
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    width: 100%;  /* Make sure image takes full width of the card */
+    height: 250px; /* Fixed height for the image */
+    object-fit: cover; /* Image will cover the area without distortion */
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
