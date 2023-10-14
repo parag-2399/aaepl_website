@@ -18,11 +18,9 @@
 }
 
 .carousel-caption h5 {
-    font-size: 2.5rem; /* equivalent of 40px for 16px root font-size */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem; /* Made the font a bit larger */
+    font-weight: 600;  /* Made the font slightly bolder */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Added a shadow for better readability against bright backgrounds */
 }
 
 .carousel-caption p {
@@ -65,7 +63,7 @@
 
 @media (max-width: 768px) {
     .carousel-caption h5 {
-        font-size: 1.75rem; /* Further reduce font-size for smaller screens */
+        font-size: 1.5rem; 
     }
     .carousel-caption p {
         font-size: 0.875rem; /* Further reduce font-size */

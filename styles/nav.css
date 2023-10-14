@@ -1,9 +1,17 @@
 /* Base styles for the navigation bar */
+.navbar {
+    background-color: transparent; /* Initially transparent */
+    transition: background-color 0.3s ease;
+}
+.navbar-brand {
+    color: #fff !important; /* To ensure the brand color is always white */
+}
 .navbar-nav a {
 	font-family: poppins;
 	font-size: 16px; /* reduced from 18px for better readability */
 	text-transform: uppercase;
 	font-weight: 600; /* slightly reduced the boldness */
+	color: #fff !important;
 }
 
 .navbar-light .navbar-brand {
@@ -29,7 +37,9 @@
 .nav-link {
 	padding: .2rem 1rem;
 }
-
+.navbar-nav .nav-link:hover {
+    color: #65FBD2 !important;
+}
 .navbar-toggler {
 	padding: 1px 5px;
 	font-size: 16px; /* slight reduction for balance */
@@ -61,9 +71,7 @@
 
 /* Styles for the navbar when scrolled */
 .navbar.scrolled {
-    background-color: #FAF7FF;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: rgba(10, 10, 10, 0.9); /* A semi-opaque black */
 }
 
 .navbar.scrolled .navbar-brand,
